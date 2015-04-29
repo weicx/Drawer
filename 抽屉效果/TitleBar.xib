@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gb7-Ga-2Ek" customClass="TitleBar">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvK-ue-j62" userLabel="菜单">
+                    <rect key="frame" x="0.0" y="16" width="44" height="44"/>
+                    <state key="normal" image="btn_menu">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="menuClick:" destination="gb7-Ga-2Ek" eventType="touchUpInside" id="RiK-pq-9tv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXi-xu-vbZ" userLabel="搜索">
+                    <rect key="frame" x="417" y="16" width="44" height="44"/>
+                    <state key="normal" image="btn_search"/>
+                    <connections>
+                        <action selector="search:" destination="gb7-Ga-2Ek" eventType="touchUpInside" id="94n-sr-j7x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-G1-zy5">
+                    <rect key="frame" x="207" y="22" width="46" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="i9y-ln-chn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="首页">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.37340434" blue="0.35063656380000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HXi-xu-vbZ" secondAttribute="trailing" id="6Y0-AG-utg"/>
+                <constraint firstItem="BvK-ue-j62" firstAttribute="leading" secondItem="gb7-Ga-2Ek" secondAttribute="leading" id="KYv-lk-AUu"/>
+                <constraint firstAttribute="bottom" secondItem="sZG-G1-zy5" secondAttribute="bottom" constant="7" id="RUA-bo-1UI"/>
+                <constraint firstItem="sZG-G1-zy5" firstAttribute="centerX" secondItem="gb7-Ga-2Ek" secondAttribute="centerX" id="nU8-pi-XhZ"/>
+                <constraint firstItem="HXi-xu-vbZ" firstAttribute="centerY" secondItem="BvK-ue-j62" secondAttribute="centerY" id="u0b-J2-bSm"/>
+                <constraint firstItem="HXi-xu-vbZ" firstAttribute="centerY" secondItem="sZG-G1-zy5" secondAttribute="centerY" id="ytH-7c-J9i"/>
+                <constraint firstItem="sZG-G1-zy5" firstAttribute="top" secondItem="gb7-Ga-2Ek" secondAttribute="top" constant="22" id="zDN-kg-w6o"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="211.5" y="-19.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_menu" width="44" height="44"/>
+        <image name="btn_search" width="44" height="44"/>
+    </resources>
+</document>
