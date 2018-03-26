@@ -23,7 +23,7 @@
     
     imageView.frame = CGRectMake(0, 0, self.textField.bounds.size.height, self.textField.bounds.size.height);
     
-    // 设置图片将光标右移
+    // 设置图片将光标右移  
     self.textField.leftView = imageView;
     self.textField.leftViewMode = UITextFieldViewModeAlways;
 }
